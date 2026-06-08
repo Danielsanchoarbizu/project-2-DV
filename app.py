@@ -2,8 +2,7 @@ import pandas as pd
 import plotly.express as px
 from dash import Dash, html, dcc, Input, Output
 
-url = "https://assets.datacamp.com/production/repositories/6253/datasets/4e93d24772eeee7e379b8d5043c47f47976ff8af/ds_salaries.csv"
-df = pd.read_csv(url)
+df = pd.read_csv("data/ds_salaries.csv")
 
 experience_labels = {
     "EN": "Entry Level",
